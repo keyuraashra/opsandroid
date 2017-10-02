@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background" >
+
+    <EditText
+        android:id="@+id/edt_restaurant_name"
+        style="@style/largeText"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:hint="Restaurant Name"
+        android:inputType="text"
+        android:textColorHint="@android:color/white" />
+
+    <EditText
+        android:id="@+id/edt_table_no"
+        style="@style/largeText"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_restaurant_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:hint="Table No"
+        android:inputType="text|number"
+        android:textColorHint="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_ok"
+        style="@style/largeText"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_table_no"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/blue_button"
+        android:text="Continue"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_background" >
+
+    <RelativeLayout
+        android:id="@+id/rl_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+        <Button
+            android:id="@+id/btn_new_user"
+            style="@style/largeText"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blue_button"
+            android:text="New User"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_existing_user"
+            style="@style/largeText"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_new_user"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blue_button"
+            android:text="Existing User"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_new_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/edt_user_name"
+            style="@style/largeText"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:hint="Your Name"
+            android:inputType="textPersonName"
+            android:textColorHint="@android:color/white" />
+
+        <EditText
+            android:id="@+id/edt_user_dob"
+            style="@style/largeText"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_user_name"
+            android:layout_centerHorizontal="true"
+            android:hint="Date of Birth"
+            android:inputType="text|date"
+            android:textColorHint="@android:color/white" />
+
+        <EditText
+            android:id="@+id/edt_user_email"
+            style="@style/largeText"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_user_dob"
+            android:layout_centerHorizontal="true"
+            android:hint="E-Mail"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_sign_in"
+            style="@style/largeText"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_user_email"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blue_button"
+            android:text="Continue"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/app_dark_backgroudn" >
+
+        <Button
+            android:id="@+id/btn_ok"
+            style="@style/mediumText"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:background="@color/app_light_background"
+            android:text="Add to Order"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/mediumText"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:background="@color/app_light_background"
+            android:text="Back"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>
